@@ -1,0 +1,12 @@
+[Unit]
+Description=et
+
+[Service]
+User=bogdan
+EnvironmentFile=/opt/et/environment
+WorkingDirectory=/opt/et
+ExecStart=/usr/bin/python /opt/et/et.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
